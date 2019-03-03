@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of GulshanDev_LogRotate Module
+ *
+ * @author Gulshan Kumar <gulshan.4dream@gmail.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="system">
+            <group id="log_rotate" translate="label comment" type="text" sortOrder="15" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Log Rotate Configuration</label>
+                <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0"
+                       showInStore="0" canRestore="1">
+                    <label>Enable Log Rotate</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="keep_number" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="0"
+                       showInStore="0" canRestore="1">
+                    <label>Keep Number</label>
+                    <comment>Number of rotated files you want to keep.</comment>
+                </field>
+                <field id="keep_size" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="0"
+                       showInStore="0" canRestore="1">
+                    <label>Keep Size</label>
+                    <comment>in MB, The log file will be rotated if file size is greater than or equal to defined here. If leave empty or leave blank then the default value 5MB will be considered.</comment>
+                </field>
+                <field id="cron_exp" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="0"
+                       showInStore="0" canRestore="1">
+                    <label>Frequency</label>
+                    <comment>Cron Expression i.e. "0 1 * * *"</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

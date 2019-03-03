@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of GulshanDev_LogRotate Module
+ * 
+ * @author Gulshan Kumar <gulshan.4dream@gmail.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="GulshanDev_LogRotate" setup_version="1.0.0">
+    </module>
+</config>

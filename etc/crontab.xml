@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of GulshanDev_LogRotate Module
+ *
+ * @author Gulshan Kumar <gulshan.4dream@gmail.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="default">
+        <job name="log_rotate" instance="GulshanDev\LogRotate\Cron\Rotater" method="execute">
+            <config_path>system/log_rotate/cron_exp</config_path>
+        </job>
+    </group>
+</config>
